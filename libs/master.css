@@ -1,0 +1,78 @@
+body {
+    font-family:"Roboto", "Arial";
+}
+@font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+a, a:hover {
+    text-decoration:none;
+}
+.navigation a {
+   color:#AAA; 
+}
+.navigation a:hover, .navigation .active {
+    color:#ff0000;
+}
+.navigation h5 {
+    font-size:90%;
+}
+.navigation {
+    color:#FFF;
+    margin:0;
+    padding:0;
+    background:#1d1d1d;
+}
+.navigation img {
+    width:50%;
+    height:50%;
+    margin-top:50px;
+    margin-bottom:20px;
+}
+#connections, .connections-spacer {
+    height:45px;
+    background:#1d1d1d;
+}
+#connections {
+    color:#ff0000;
+    padding:8px;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:999;
+}
+#connections a {
+    color:#FFF;
+}
+#connections a:hover {
+    color:#ff0000;
+}
+#connections .header {
+    padding-right:5px;
+    font-weight:bold;
+}
+.content h4 {
+    padding:20px;
+    color:#008006;
+}
+.fa {
+    margin:5px;
+}
+@media (max-width: 769px) {
+    .navigation {
+        width:100%;
+    }
+    #connections {
+        text-align:center;
+    }
+}
+@media (min-width: 768px) {
+    .navigation {
+        position:fixed;
+        height:100%;
+        width:20%;
+    }
+    .content {
+        margin-left:20%;
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "nodeShop",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "davidjmcneill",
+    "contributors": [],
+    "dependencies": {
+        "express": "^4.17.1",
+        "pug": "^3.0.0"
+    }
+}

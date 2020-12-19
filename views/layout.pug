@@ -1,0 +1,36 @@
+block variables
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="utf-8")
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Patsy's Pizza Elm Grove - #{title}
+        link(rel='stylesheet' href='../libs/bootstrap.min.css')
+        link(rel='stylesheet' href='../libs/master.css')
+        link(rel='stylesheet' href='../libs/font-awesome.min.css')
+        link(rel='icon' href='../images/icon.png')
+        link(rel='apple-touch-icon' href='../images/icon.png')
+        script(src='../libs/jquery.min.js')
+        if anchor
+            script.
+                window.onload = window.location.hash = '#{anchor}';
+
+    body
+        .navigation.text-center
+            nav.navbar.flex-column 
+                img.img-fluid(src='../images/logo.jpg' alt='Logo')
+                h4 Patsy's Pizza in Elm Grove
+                h5 A Slice Above The Rest
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link(class=home href='/') Home
+                    li.nav-item
+                        a.nav-link(class=projects href='/contact') Contact Us
+
+            button.btn.btn-success.header Order Now
+
+        .content
+    
+            block content
+            
