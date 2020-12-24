@@ -1,7 +1,6 @@
 const express = require('express');
 var app = express();
-const router = express.Router();
-var server = require('http').createServer(app); 
+var server = require('http').createServer(app);
 
 const publicRouter = require("./routes/public");
 app.use('/', publicRouter);

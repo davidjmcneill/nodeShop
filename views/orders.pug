@@ -1,0 +1,41 @@
+extends layout
+
+block variables
+    - var title = "Orders"
+    - var orders = "active"
+
+block content
+    script.
+        function buttonProcessor() {
+            alert('hello');
+        }
+        function loadOrders() {
+            $.get( "/current_orders", function( data ) {
+                $('#current_orders tbody').html("");
+                $('#time').html(new Date());
+                $.each(data, function (i, val) {
+                    $('#current_orders tbody').append("<tr><td>"+val['date_due']+"</td><td>"+val['order_id']+"</td></tr>");
+                });
+            });
+        }
+
+    h4 Order Tracking
+    
+    div.col-sm-12
+        button.btn.btn-success(onclick='buttonProcessor()') New Order
+        button.btn.btn-secondary(onclick='loadOrders()') Load Orders
+    hr
+
+    div.col-sm-12
+        div#time
+        table.table.table-bordered#current_orders
+            thead
+                tr
+                    th Due
+                    th Order Number  
+                    th Type
+                    th Customer
+                    th Phone Number
+                    th Items
+                    th Order Total
+            tbody

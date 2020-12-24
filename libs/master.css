@@ -24,8 +24,8 @@ a, a:hover {
     background:#1d1d1d;
 }
 .navigation img {
-    width:50%;
-    height:50%;
+    width:60%;
+    height:60%;
     margin-top:50px;
     margin-bottom:20px;
 }
@@ -55,7 +55,7 @@ a, a:hover {
     padding:20px;
     color:#008006;
 }
-.fa {
+.fa, button {
     margin:5px;
 }
 @media (max-width: 769px) {

@@ -18,19 +18,30 @@ html(lang="en")
 
     body
         .navigation.text-center
-            nav.navbar.flex-column 
-                img.img-fluid(src='../images/logo.jpg' alt='Logo')
+            nav.navbar.flex-column
+                a(class=home href='/')
+                    img.img-fluid(src='../images/logo.jpg' alt='Logo')
                 h4 Patsy's Pizza in Elm Grove
-                h5 A Slice Above The Rest
+                h5.font-italic A Slice Above The Rest
                 ul.navbar-nav
-                    li.nav-item
-                        a.nav-link(class=home href='/') Home
-                    li.nav-item
-                        a.nav-link(class=projects href='/contact') Contact Us
-
-            button.btn.btn-success.header Order Now
+                    if auth < 2
+                        li.nav-item
+                            a.nav-link(class=menu href='/menu') Menu
+                        li.nav-item
+                            a.nav-link(class=contact href='/contact') Contact Us
+                    if auth == 2
+                        li.nav-item
+                            a.nav-link(class=orders href='/orders') Orders
+                    if auth == 0
+                        li.nav-item
+                            a.nav-link(class=login href='/login') Login
+            if auth < 2
+                button.btn.btn-success.header Order Pizza!
 
         .content
-    
+            .connections-spacer#top
+            #connections
+                a.fa.fa-user(href='/login') Login
+
             block content
             
