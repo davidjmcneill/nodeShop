@@ -14,7 +14,7 @@ block content
                 $('#current_orders tbody').html("");
                 $('#time').html(new Date());
                 $.each(data, function (i, val) {
-                    $('#current_orders tbody').append("<tr><td>"+val['date_due']+"</td><td>"+val['order_id']+"</td></tr>");
+                    $('#current_orders tbody').append("<tr><td>"+val['date_due']+"</td><td>"+val['order_id']+"</td><td>"+val['type']+"</td></tr>");
                 });
             });
         }

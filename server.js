@@ -22,12 +22,3 @@ app.use('/files', express.static(__dirname + '/files'));
 var HTTP_PORT = 8081;
 server.listen(HTTP_PORT);
 console.log("Running at Port "+HTTP_PORT);
-    
-//    
-    
-//    link.find('a:href').each((i, element) => {
-//        const $element = $(element);
-//        const url = {};
-//        url.name = $element.find('a').text();
-//        console.log(url);
-//    });

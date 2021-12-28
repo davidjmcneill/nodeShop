@@ -9,7 +9,7 @@ const con = mysql.createConnection({
     password: DB.password
 });
 
-var auth = 0;
+var auth = 2;
 //authentication levels
 // 0 = not authenticated (guest)
 // 1 = customer

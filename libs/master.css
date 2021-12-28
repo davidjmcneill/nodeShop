@@ -34,7 +34,7 @@ a, a:hover {
     background:#1d1d1d;
 }
 #connections {
-    color:#ff0000;
+    color:#008006;
     padding:8px;
     position:fixed;
     width:100%;
@@ -45,7 +45,7 @@ a, a:hover {
     color:#FFF;
 }
 #connections a:hover {
-    color:#ff0000;
+    color:#008006;
 }
 #connections .header {
     padding-right:5px;
